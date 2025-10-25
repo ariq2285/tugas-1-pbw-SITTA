@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard SITTA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js"></script>
+  <script src="js/script.js" ></script>
+</head>
+
+<body class="dashboard-body">
+  <div class="sidebar">
+    <h2>Menu SITTA</h2>
+    <a href="stok.html">📦 Informasi Bahan Ajar</a>
+    <a href="tracking.html">🚚 Tracking Pengiriman</a>
+    <a href="#">📊 Laporan</a>
+    <a href="#">🧾 Histori Transaksi</a>
+  </div>
+
+  <div class="content">
+    <div class="header">
+      <div class="greeting" id="greetingText"></div>
+      <div class="user-info" id="userInfo"></div>
+      <button class="logout" onclick="logout()">Logout</button>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-card" onclick="location.href='stok.html'">
+        <h3>📦 Informasi Bahan Ajar</h3>
+        <p>Lihat data stok bahan ajar terkini.</p>
+      </div>
+
+      <div class="menu-card" onclick="location.href='tracking.html'">
+        <h3>🚚 Tracking Pengiriman</h3>
+        <p>Lacak status pengiriman bahan ajar.</p>
+      </div>
+
+      <div class="menu-card">
+        <h3>📊 Laporan</h3>
+        <p>Monitoring progress dan rekap bahan ajar.</p>
+      </div>
+
+      <div class="menu-card">
+        <h3>🧾 Histori Transaksi</h3>
+        <p>Lihat riwayat transaksi bahan ajar Anda.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- panggil initDashboard setelah halaman dimuat -->
+  <script>
+    document.addEventListener('DOMContentLoaded', initDashboard);
+  </script>
+</body>
+
+</html>

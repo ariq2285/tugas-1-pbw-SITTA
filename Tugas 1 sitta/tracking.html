@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracking Pengiriman - SITTA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body class="tracking-body">
+  <header>
+    <h2>🚚 Tracking Pengiriman</h2>
+    <button onclick="window.location.href='dashboard.html'">Kembali</button>
+  </header>
+
+  <div class="container">
+    <h3>Cari Nomor Delivery Order (DO)</h3>
+    <input type="text" id="inputDO" placeholder="Masukkan Nomor DO, misal: 2023001234">
+    <button class="search-btn" onclick="cariDO()">Cari</button>
+
+    <div id="resultContainer" class="result">
+      <div class="info" id="infoSection"></div>
+      <div class="progress">
+        <div class="progress-bar" id="progressBar">0%</div>
+      </div>
+      <table id="trackingTable"></table>
+    </div>
+  </div>
+</body>
+</html>

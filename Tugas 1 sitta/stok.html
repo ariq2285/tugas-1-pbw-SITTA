@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi Stok Bahan Ajar - SITTA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body class="stok-body">
+  <header>
+    <h2>📚 Informasi Stok Bahan Ajar</h2>
+    <button onclick="window.location.href='dashboard.html'">Kembali</button>
+  </header>
+
+  <div class="container">
+    <h3>Daftar Stok Bahan Ajar</h3>
+    <table id="stokTable">
+      <thead>
+        <tr>
+          <th>Cover</th>
+          <th>Kode Barang</th>
+          <th>Nama Barang</th>
+          <th>Jenis</th>
+          <th>Edisi</th>
+          <th>Stok</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="add-form">
+      <h3>Tambah Data Bahan Ajar</h3>
+      <input type="text" id="kodeBarang" placeholder="Kode Barang">
+      <input type="text" id="namaBarang" placeholder="Nama Barang">
+      <input type="text" id="jenisBarang" placeholder="Jenis">
+      <input type="text" id="edisi" placeholder="Edisi">
+      <input type="number" id="stok" placeholder="Stok">
+      <input type="text" id="cover" placeholder="URL Gambar">
+      <button onclick="tambahData()">Tambah</button>
+    </div>
+  </div>
+</body>
+</html>
